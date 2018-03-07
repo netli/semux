@@ -1,0 +1,106 @@
+* {
+    -fx-root-background-color: rgba(34, 88, 109, 0.14);
+    -fx-menu-color: linear-gradient(to bottom right, rgba(34, 88, 109, 0.25), rgba(34, 88, 109, 0.7));
+    -fx-menu-color-highlighted: #455a64;
+    -fx-menu-font-color: #ffffff;
+    -fx-menu-font-color-highlighted: #ffffff
+}
+.anchor-pane {
+    -fx-background-color: -fx-root-background-color
+}
+.text-field-no-borders {
+    -fx-text-box-border: transparent
+}
+.label-header {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px
+}
+.control-interactive {
+    -fx-cursor: hand
+}
+.qr-code-h-box {
+    -fx-border-color: rgba(0, 0, 0, 1)
+}
+.h-box-footer {
+    -fx-background-color: rgba(34, 88, 109, 0.4)
+}
+.grid-pane {
+    -fx-border-color: rgba(106, 115, 117, 0.4) transparent transparent transparent;
+    -fx-border-width: 1
+}
+.navigation-button {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(116, 169, 204, 0.4);
+    -fx-padding: 0 0 0 35;
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 2%
+}
+.navigation-button-active {
+    -fx-effect: innershadow(one-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 10, 10)
+}
+.navigation-button:focused {
+    -fx-border-color: rgba(0, 0, 0, 1);
+    -fx-border-width: 1;
+    -fx-border-style: dashed
+}
+.navigation-button:hover {
+    -fx-background-color: rgba(116, 169, 204, 0.5)
+}
+.navigation-button:pressed {
+    -fx-border-color: rgba(106, 115, 117, 1);
+    -fx-border-width: 2;
+    -fx-border-style: solid
+}
+.menu-item-new-group {
+    -fx-border-color: rgba(223, 215, 215, 0.8) transparent transparent transparent;
+    -fx-border-width: 1
+}
+.menu-bar {
+    -fx-background-color: -fx-menu-color;
+    -fx-font-size: 14px;
+    -fx-cursor: hand
+}
+.menu-bar > .container > .menu-button {
+    -fx-background-color: -fx-menu-color
+}
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: -fx-menu-font-color
+}
+.menu-bar > .container > .menu-button > .label:disabled {
+    -fx-opacity: 1
+}
+.menu-bar > .container > .menu-button:hover, .menu-bar > .container > .menu-button:focused, .menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -fx-menu-color-highlighted
+}
+.menu-bar > .container > .menu-button:hover > .label, .menu-bar > .container > .menu-button:focused > .label, .menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: -fx-menu-font-color-highlighted
+}
+.menu-item {
+    -fx-background-color: -fx-menu-color;
+    -fx-cursor: hand
+}
+.menu-item .label {
+    -fx-text-fill: -fx-menu-font-color
+}
+.menu-item .label:disabled {
+    -fx-opacity: 1
+}
+.menu-item:focused, .menu-item:hovered {
+    -fx-background-color: -fx-menu-color-highlighted
+}
+.menu-item:focused .label, .menu-item:hovered .label {
+    -fx-text-fill: -fx-menu-font-color-highlighted
+}
+.context-menu {
+    -fx-background-color: -fx-menu-color
+}
+.dialog-pane {
+    -fx-background-color: -fx-root-background-color;
+    -fx-font-size: 12px
+}
+.dialog-pane .button {
+    -fx-font-size: 15px;
+    -fx-cursor: hand
+}

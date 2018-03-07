@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="550.0" prefWidth="800.0" styleClass="anchor-pane" stylesheets="@../../../resources/styles/default.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.semux.gui.javafx.wallet.scenes.secondary.export.ExportKeyFXMLController">
+    <children>
+      <GridPane AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="70.0" prefHeight="70.0" vgrow="NEVER" />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="exportKeyTableView" tableMenuButtonVisible="true" GridPane.columnSpan="3" GridPane.rowSpan="2">
+              <columns>
+                <TableColumn fx:id="numberExportKeyTableColumn" minWidth="20.0" prefWidth="10.0" text="#" />
+                  <TableColumn fx:id="addressExportKeyTableColumn" minWidth="170.0" prefWidth="300.0" text="Address" />
+                  <TableColumn fx:id="nameExportKeyTableColumn" minWidth="80.0" prefWidth="300.0" text="Name" />
+                <TableColumn fx:id="keyExportKeyTableColumn" minWidth="360.0" prefWidth="300.0" text="Private key" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="copyKeyButton" minHeight="40.0" mnemonicParsing="false" onKeyReleased="#copyOnEnterKeyPressed" onMouseClicked="#copy" prefWidth="120.0" styleClass="control-interactive" text="Copy private key">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

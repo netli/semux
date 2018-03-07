@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root prefWidth="900.0" type="javafx.scene.layout.HBox" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar fx:id="menuBar" HBox.hgrow="ALWAYS">
+            <menus>
+              <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                <items>
+                  <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" onAction="#exit" text="Exit" />
+                </items>
+              </Menu>
+              <Menu fx:id="walletMenu" mnemonicParsing="false" text="Wallet">
+                <items>
+                  <MenuItem fx:id="changePasswordMenuItem" mnemonicParsing="false" onAction="#changePassword" text="Change password" />
+                      <MenuItem fx:id="recoverAccountsMenuItem" mnemonicParsing="false" onAction="#recoverAccounts" styleClass="menu-item-new-group" text="Recover accounts from backup" />
+                      <MenuItem fx:id="backupWalletMenuItem" mnemonicParsing="false" onAction="#backupWallet" text="Backup wallet" />
+                      <MenuItem fx:id="importKeyMenuItem" mnemonicParsing="false" onAction="#importKey" styleClass="menu-item-new-group" text="Import private key" />
+                      <MenuItem fx:id="exportKeyMenuItem" mnemonicParsing="false" onAction="#exportKey" text="Export private key" />
+                </items>
+              </Menu>
+            <Menu fx:id="accountMenu" mnemonicParsing="false" text="Account">
+               <items>
+                  <MenuItem fx:id="manageAccountsMenuItem" mnemonicParsing="false" onAction="#manageAccounts" text="Manage accounts" />
+               </items>
+            </Menu>
+              <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                <items>
+                  <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#about" text="About" />
+                      <MenuItem fx:id="helpMenuItem" mnemonicParsing="false" onAction="#help" text="Help" />
+                </items>
+              </Menu>
+            </menus>
+             <cursor>
+                <Cursor fx:constant="DEFAULT" />
+             </cursor>
+        </MenuBar>
+    </children>
+</fx:root>

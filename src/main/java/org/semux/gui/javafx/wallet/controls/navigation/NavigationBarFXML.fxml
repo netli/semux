@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<fx:root prefWidth="870.0" type="javafx.scene.layout.HBox" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <GridPane fx:id="gridPane" HBox.hgrow="ALWAYS">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="homeNavigationButton" fx:id="homeNavigationButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onKeyPressed="#loadHomeSceneOnEnterKeyPressed" onMouseClicked="#loadHomeScene" text="Home" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="12.0" right="12.0" />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="navigation-button" />
+                  <String fx:value="control-interactive" />
+               </styleClass>
+            </Button>
+            <Button id="sendNavigationButton" fx:id="sendNavigationButton" alignment="CENTER" layoutX="20.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onKeyPressed="#loadSendSceneOnEnterKeyPressed" onMouseClicked="#loadSendScene" text="Send" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="12.0" right="12.0" />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="navigation-button" />
+                  <String fx:value="control-interactive" />
+               </styleClass>
+            </Button>
+            <Button id="receiveNavigationButton" fx:id="receiveNavigationButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onKeyPressed="#loadReceiveSceneOnEnterKeyPressed" onMouseClicked="#loadReceiveScene" text="Receive" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="12.0" right="12.0" />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="navigation-button" />
+                  <String fx:value="control-interactive" />
+               </styleClass>
+            </Button>
+            <Button id="transactionsNavigationButton" fx:id="transactionsNavigationButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onKeyPressed="#loadTransactionsSceneOnEnterKeyPressed" onMouseClicked="#loadTransactionsScene" text="Transactions" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="12.0" right="12.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="navigation-button" />
+                  <String fx:value="control-interactive" />
+               </styleClass>
+            </Button>
+            <Button id="delegatesNavigationButton" fx:id="delegatesNavigationButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onKeyPressed="#loadDelegatesSceneOnEnterKeyPressed" onMouseClicked="#loadDelegatesScene" text="Delegates" GridPane.columnIndex="4">
+               <GridPane.margin>
+                  <Insets left="12.0" right="12.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="navigation-button" />
+                  <String fx:value="control-interactive" />
+               </styleClass>
+            </Button>
+            <Button id="lockNavigationButton" fx:id="lockNavigationButton" alignment="CENTER" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#lockScreen" text="Lock" GridPane.columnIndex="5" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="12.0" right="12.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="navigation-button" />
+                  <String fx:value="control-interactive" />
+               </styleClass>
+            </Button>
+         </children>
+      </GridPane>
+    </children>
+</fx:root>
